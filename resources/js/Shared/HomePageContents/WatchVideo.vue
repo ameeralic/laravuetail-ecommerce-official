@@ -1,7 +1,7 @@
 <template>
     <section>
         <div class="max-w-screen-lg mx-auto py-3 px-4 grid justify-items-center">
-            <div
+            <a href="http://lms-demo.laravuetail.com" target="_blank"
                 class="flex items-center mb-4 text-sm font-medium tracking-tight leading-none text-gray-100 md:text-sm lg:text-sm text-center hover:text-[#38bdf8] cursor-pointer hover:underline">
                 <h1>
                     Visit Demo Website
@@ -12,7 +12,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
                 </svg>
-            </div>
+            </a>
 
 
 
