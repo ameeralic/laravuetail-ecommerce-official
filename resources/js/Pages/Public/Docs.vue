@@ -91,17 +91,22 @@
                 </p>
 
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mb-2">
-                    <img src="/screenshots/home.png" class="h-full w-56 object-contain" alt="">
-                    <img src="/screenshots/courses.png" class="h-full w-56 object-contain" alt="">
-                    <img src="/screenshots/login.png" class="h-full w-56 object-contain" alt="">
-                    <img src="/screenshots/register.png" class="h-full w-56 object-contain" alt="">
-                    <img src="/screenshots/courseindex.png" class="h-full w-56 object-contain" alt="">
-                    <img src="/screenshots/editcourse.png" class="h-full w-56 object-contain" alt="">
-                    <img src="/screenshots/teacherindex.png" class="h-full w-56 object-contain" alt="">
-                    <img src="/screenshots/editteacher.png" class="h-full w-56 object-contain" alt="">
-                    <img src="/screenshots/profileinfo.png" class="h-full w-56 object-contain" alt="">
-                    <img src="/screenshots/course.png" class="h-full w-56 object-contain" alt="">
-                    <img src="/screenshots/chapter.png" class="h-full w-56 object-contain" alt="">
+                    <img :src="$page.props.app_url + 'screenshots/home.png'" class="h-full w-56 object-contain" alt="">
+                    <img :src="$page.props.app_url + 'screenshots/courses.png'" class="h-full w-56 object-contain" alt="">
+                    <img :src="$page.props.app_url + 'screenshots/login.png'" class="h-full w-56 object-contain" alt="">
+                    <img :src="$page.props.app_url + 'screenshots/register.png'" class="h-full w-56 object-contain" alt="">
+                    <img :src="$page.props.app_url + 'screenshots/courseindex.png'" class="h-full w-56 object-contain"
+                        alt="">
+                    <img :src="$page.props.app_url + 'screenshots/editcourse.png'" class="h-full w-56 object-contain"
+                        alt="">
+                    <img :src="$page.props.app_url + 'screenshots/teacherindex.png'" class="h-full w-56 object-contain"
+                        alt="">
+                    <img :src="$page.props.app_url + 'screenshots/editteacher.png'" class="h-full w-56 object-contain"
+                        alt="">
+                    <img :src="$page.props.app_url + 'screenshots/profileinfo.png'" class="h-full w-56 object-contain"
+                        alt="">
+                    <img :src="$page.props.app_url + 'screenshots/course.png'" class="h-full w-56 object-contain" alt="">
+                    <img :src="$page.props.app_url + 'screenshots/chapter.png'" class="h-full w-56 object-contain" alt="">
                 </div>
 
                 <p class="text-zinc-100 mb-1 font-medium font-poppins text-sm my-10">
