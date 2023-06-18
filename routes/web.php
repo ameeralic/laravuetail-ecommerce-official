@@ -12,8 +12,11 @@ use Inertia\Inertia;
 | routes are loaded by the RouteServiceProvider and all of them will
 | be assigned to the "web" middleware group. Make something great!
 |
-*/
+ */
 
 Route::get('/', function () {
     return Inertia::render('Public/Home');
+});
+Route::get('/docs', function () {
+    return Inertia::render('Public/Docs');
 });

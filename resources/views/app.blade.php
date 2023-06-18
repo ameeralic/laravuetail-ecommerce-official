@@ -7,7 +7,7 @@
     @vite('resources/css/app.css')
     @inertiaHead
   </head>
-  <body>
+  <body class="min-h-screen bg-zinc-900">
     @inertia
   </body>
 </html>
