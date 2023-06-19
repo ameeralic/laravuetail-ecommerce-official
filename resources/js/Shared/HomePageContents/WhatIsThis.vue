@@ -79,30 +79,23 @@
                 <div>
                     <h1
                         class="mb-4 text-sm font-medium tracking-tight leading-none text-gray-100 md:text-base lg:text-lg dark:text-white">
-                        Learning Management System LMS
+                        E-commerce web application with Stripe payment gateway
                     </h1>
                     <p class="mb-2 text-sm font-light tracking-tight text-gray-100 md:text-sm lg:text-sm dark:text-white">
-                        A learning management system is a software application
-                        or web-based technology used to plan, implement and
-                        assess a specific learning process. It's used for
-                        e-learning practices and, in its most common form,
-                        consists of two elements: a server that performs the
-                        base functionality and a user interface (UI) that is
-                        operated by instructors, students and administrators.
-                    </p>
-                    <p class="mb-2 text-sm font-light tracking-tight text-gray-100 md:text-sm lg:text-sm dark:text-white">
-                        Typically, an LMS provides an instructor with a way to
-                        create and deliver content, monitor student
-                        participation, and assess student performance. It might
-                        also provide students with interactive features, such as
-                        threaded discussions, video conferencing and discussion
-                        forums.
+                        An e-commerce web application with a Stripe payment gateway is an online platform that facilitates
+                        buying and selling of products or services over the internet. It utilizes the Stripe payment
+                        gateway, which is a secure payment processing system that enables businesses to accept and manage
+                        online payments. With this integration, customers can make purchases using various payment methods,
+                        such as credit cards, digital wallets, or bank transfers. The Stripe payment gateway ensures the
+                        security and reliability of transactions by encrypting sensitive information and handling payment
+                        processing seamlessly, providing a convenient and trustworthy experience for both businesses and
+                        customers.
                     </p>
                 </div>
                 <div class="place-self-center">
                     <div class="rounded-lg shadow-xl w-56 md:w-96 mx-auto">
                         <img class="object-cover h-full w-full shadow-xl rounded-lg opacity-80"
-                            :src="$page.props.app_url + 'storage/images/lms-image.jpg'" />
+                            :src="$page.props.app_url + 'storage/images/ecommerce-image.jpg'" />
                     </div>
                 </div>
             </div>

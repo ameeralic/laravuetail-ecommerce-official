@@ -14,9 +14,9 @@
             <div>
                 <div
                     class="text-gray-100 font-poppins text-sm cursor-pointer hover:text-white space-x-3 grid justify-items-end md:justify-items-start md:grid-cols-3">
-                    <a href="https://laravuetail.com" class="hover:underline">Projects</a>
-                    <a href="https://laravuetail.com/about" class="hover:underline">About</a>
-                    <a href="https://github.com/LaraVueTail" class="hover:underline">Github
+                    <a href="https://laravuetail.com#projects" target="_blank" class="hover:underline">Projects</a>
+                    <a href="https://laravuetail.com/about" target="_blank" class="hover:underline">About</a>
+                    <a href="https://github.com/LaraVueTail" target="_blank" class="hover:underline">Github
                         <i class="fa-brands ml-1 fa-github text-white"></i></a>
                 </div>
             </div>

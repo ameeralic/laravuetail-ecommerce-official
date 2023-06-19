@@ -1,6 +1,6 @@
 <template>
     <Head>
-        <title>Learning Management System (LMS) Project</title>
+        <title>E-commerce web applicatioon with Stripe payment gateway</title>
         <meta name="description"
             content="LaraVueTail is a library of open source web applications built with Laravel, vue and Tailwind CSS. This is an ecommerce website built with VILT Stack" />
     </Head>
@@ -13,7 +13,7 @@
         <div class="relative px-4 py-10 max-w-3xl">
             <div class="min-h-48">
                 <p class="text-xl md:text-2xl text-zinc-100 font-poppins mb-5">
-                    Learning Management System (LMS) Project
+                    E-commerce web applicatioon with Stripe payment gateway
                 </p>
                 <div class="mb-5">
                     <p class="text-zinc-100 mb-1 font-medium font-poppins text-sm">
@@ -45,8 +45,10 @@
                     </p>
 
                     <p class="text-sm text-zinc-100 font-poppins font-light">
-                        This project is a Learning Management System (LMS) website build in VILT(Vue, Inertia, Laravel,
-                        Tailwind) Stack.
+                        This project is a E-commerce web application in VILT Stack with Stipe integration. It also has 'Cash
+                        on Delivery (COD)' and on 'Order on Whatsapp' feature (where a Whatsapp msg containing order details
+                        would be send from cutomer's Whatsapp to shop's Whatsapp). By defualt it have COD only, but you can
+                        enable the rest from admin dashboard.
                     </p>
                 </div>
 
@@ -55,18 +57,26 @@
                         Features :
                     </p>
                     <ul class="list-disc text-sm text-zinc-100 font-poppins font-light pl-5 mb-5">
-                        <li>Student/Teacher Accounts (Sign in/Register/Student and Teacher dashboard)</li>
-                        <li>Admin dashboard and controls</li>
-                        <ul class="list-disc pl-5">
-                            <li>CRUD Users</li>
-                            <li>CRUD Teachers</li>
-                            <li>CRUD Courses</li>
+                        <li>Login / Register functionalities</li>
+                        <li>Cart</li>
+                        <li>Customer dashboard with previous orders, shipping address and profile info</li>
+                        <li>Products listing in Home and Shop pages, and filtering with various attributes</li>
+                        <li>CMS for pages and site identities like logo, site name etc.</li>
+                        <li>CRUD custom pages</li>
+                        <li>Cash on Delivery option</li>
+                        <li>Stripe payment gateway (optional)</li>
+                        <li>Order on Whatsapp (optional)</li>
+                        <li>Admin dashboard with</li>
+                        <ul clas="list-disc pl-5">
+                            <li>CRUD Orders</li>
+                            <li>CRUD Customers</li>
+                            <li>CRUD Products</li>
                             <li>CRUD Categories</li>
-                            <li>CRUD Students</li>
+                            <li>CMS for pages</li>
+                            <li>Theme settings</li>
+                            <li>E-commerce settings</li>
+                            <li>Edit profile info</li>
                         </ul>
-                        <li>Students can enroll in to courses.</li>
-                        <li>A Teacher can be assigned to each course.</li>
-                        <li>Teacher can edit assigned courses and it's chapters.</li>
                     </ul>
                 </div>
 
@@ -74,7 +84,7 @@
                     <p class="text-zinc-100 mb-3 font-medium font-poppins text-sm">
                         Download:
                     </p>
-                    <a href="https://github.com/LaraVueTail/Learning-Management-System-LMS-Laravel-Vue-Tailwind-Inertia-VILT-Stack"
+                    <a href="https://github.com/LaraVueTail/ecommerce-laravel-vue-tailwind-inertia-VILT-Stack"
                         target="_blank"
                         class="inline-flex cursor-pointer shadow-xl shadow-[#41b883]/40 hover:shadow-[#38bdf8]/90 justify-center items-center py-3 px-4 text-sm font-medium text-center text-white rounded-xl bg-vue hover:bg-tailwind focus:ring-4 focus:ring-primary-300">
                         Github Repository
@@ -91,22 +101,8 @@
                 </p>
 
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mb-2">
-                    <img :src="$page.props.app_url + 'screenshots/home.png'" class="h-full w-56 object-contain" alt="">
-                    <img :src="$page.props.app_url + 'screenshots/courses.png'" class="h-full w-56 object-contain" alt="">
-                    <img :src="$page.props.app_url + 'screenshots/login.png'" class="h-full w-56 object-contain" alt="">
-                    <img :src="$page.props.app_url + 'screenshots/register.png'" class="h-full w-56 object-contain" alt="">
-                    <img :src="$page.props.app_url + 'screenshots/courseindex.png'" class="h-full w-56 object-contain"
-                        alt="">
-                    <img :src="$page.props.app_url + 'screenshots/editcourse.png'" class="h-full w-56 object-contain"
-                        alt="">
-                    <img :src="$page.props.app_url + 'screenshots/teacherindex.png'" class="h-full w-56 object-contain"
-                        alt="">
-                    <img :src="$page.props.app_url + 'screenshots/editteacher.png'" class="h-full w-56 object-contain"
-                        alt="">
-                    <img :src="$page.props.app_url + 'screenshots/profileinfo.png'" class="h-full w-56 object-contain"
-                        alt="">
-                    <img :src="$page.props.app_url + 'screenshots/course.png'" class="h-full w-56 object-contain" alt="">
-                    <img :src="$page.props.app_url + 'screenshots/chapter.png'" class="h-full w-56 object-contain" alt="">
+                    <img v-for="i in 20" :ke="i" :src="$page.props.app_url + `screenshots/image-${i}.png`"
+                        class="h-full w-56 object-contain" alt="">
                 </div>
 
                 <p class="text-zinc-100 mb-1 font-medium font-poppins text-sm my-10">
